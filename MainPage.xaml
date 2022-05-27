@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiWindowsSample.MainPage">
+			 
+    <ScrollView>
+
+        <VerticalStackLayout Spacing="25" VerticalOptions="Center">
+
+            <Image Source="dotnet_bot.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+                
+            <Label 
+                Text="Let's explore Multi-Windows in .NET MAUI!"
+                FontSize="25"
+                HorizontalOptions="Center" />
+
+            <Button Text="Open Windows"
+                Clicked="OnOpenWindowClicked"
+                HorizontalOptions="Center" />
+
+             <Button Text="Close Windows"
+                Clicked="OnCloseWindowClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+       
+    </ScrollView>
+ 
+</ContentPage>
+
